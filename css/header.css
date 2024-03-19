@@ -9,7 +9,6 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: #dcdcdcc8;
-    
 }
 nav{
     margin-right: 3%;
@@ -30,5 +29,40 @@ a{
 #header_name{
     font-size: 25px;
     margin-left: 2%;
-
 }
+section{
+    margin-top: 40px;
+}
+.SMN_effect-3 a {
+    font-family: Lato;
+    font-size: 17pt;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+.SMN_effect-3 a:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  
+  .SMN_effect-3 a:hover:after, .SMN_effect-3 a:focus:after {
+    height: 3px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }

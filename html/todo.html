@@ -5,21 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todo</title>
     <link rel="stylesheet" href="../css/header.css">
-
+    <link rel="stylesheet" href="../css/todo.css">
+    <script src="../js/todo.js"></script>
 </head>
 <body>
     <header>
         <a id="header_name" href="main.html">HOON</a>
         <nav>
-            <ul>
-                <li><a href="./portfolio.html">portfolio</a></li>
+            <ul class="SMN_effect-3">
                 <li><a href="./myproject.html">my project</a></li>
                 <li><a href="todo.html">one's future plans</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <h1>todo</h1>
+        <div class="todo_box">
+            <h1>html, css, js</h1>
+            <div class="todo_img htmlcss"></div>
+            <div class="todo_article">web의 기본 소양인 html,css,js를 학과 과정 중 창의 웹코딩, 웹프로그래밍을 통해 학습했습니다.
+                기본적인 웹페이지 구성을 만들 수 있게되었습니다.
+            </div>
+        </div>
+        <div class="todo_box">
+            <h1>jquery</h1>
+            <div class="todo_img jquery"></div>
+            <div class="todo_article">vanilla js를 좀 더 간편하게 만들어주는 라이브러리인 jquery를 학습했습니다.</div>
+        </div>
+        <div class="todo_box">
+            <h1>Vue</h1>
+            <div class="todo_img vue"></div>
+            <div class="todo_article">
+                처음으로 최근 웹개발에 자주 사용되는 프레임워크인 vue.js를 접했습니다.
+                spa를 기반으로 웹을 만들어주는 프레임워크를 숙지할 수 있었고 api통신에 대해 공부하였습니다.
+            </div>
+        </div>
+        <div class="todo_box">
+            <h1>React</h1>
+            <div class="todo_img react"></div>
+            <div class="todo_article">
+                국내외 가장 자주 사용되는 라이브러리인 react를 공부하였습니다.
+                react의 여러 간편한 기능들과 심화된 Rest Api를 학습하였습니다.
+            </div>
+        </div>
+        <div class="todo_box">
+            <h1>TypeScript</h1>
+            <div class="todo_img ts"></div>
+            <div class="todo_article">
+                기존의 vanilla js의 단점을 극복하고자 만든 언어인 ts를 학습할 예정입니다.
+                엄격한 타입검사를 기반으로 개발 속도 향상 및 원활한 협업을 기대할 수 있습니다.
+            </div>
+        </div>
+        <div class="todo_box">
+            <h1>Nextjs</h1>
+            <div class="todo_img next"></div>
+            <div class="todo_article">
+                백엔드, 프론트엔드 모두 다루는 풀스텍 프레임워크인 next.js를 학습하겠습니다.
+                많은 기업들이 이미 채택하였으며, 혼자서 거의 모든 웹을 만들 수 있다는 장점이 있습니다.
+            </div>
+        </div>
     </section>
+    <script>
+        let observer=new IntersectionObserver((e)=>{
+            e.forEach((box)=>{
+                if(box.isIntersecting){
+                    box.target.style.opacity=1;
+                }
+            })
+        });
+        let div= document.querySelectorAll('div')
+        observer.observe(div[0]);
+        observer.observe(div[1]);
+        observer.observe(div[2]);
+        observer.observe(div[3]);
+        observer.observe(div[4]);
+        observer.observe(div[5]);
+        observer.observe(div[6]);
+        observer.observe(div[7]);
+        observer.observe(div[8]);
+        observer.observe(div[9]);
+        observer.observe(div[10]);
+        observer.observe(div[11]);
+        observer.observe(div[12]);
+        observer.observe(div[13]);
+        observer.observe(div[14]);
+        observer.observe(div[15]);
+        observer.observe(div[16]);
+        observer.observe(div[17]);
+        observer.observe(div[18]);
+
+    </script>
 </body>
 </html>

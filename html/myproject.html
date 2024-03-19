@@ -4,23 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project Page</title>
-    <link rel="stylesheet" href="../css/header.css">
+    <script src="../js/modal.js"></script>
 
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/myproject.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <a id="header_name" href="main.html">HOON</a>
         <nav>
-            <ul>
-                <li><a href="./portfolio.html">portfolio</a></li>
+            <ul class="SMN_effect-3">
                 <li><a href="./myproject.html">my project</a></li>
                 <li><a href="todo.html">one's future plans</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>This is my project page</h1>
+    <section class="card_bundle">
+        <div class="btn card">
+                <div class="card_img" id="teamtag"></div>
+                    <p class="card_title">태그팀 홈페이지</p>
+                    <p>동아리 씨애랑의 태그팀 웹페이지를 만들었습니다.</p>
+                    제작기간: 23년 7월 ~23년 8월
+                    <br>
+                    <br>
 
+                    사용한 툴: html,css,js,vue.js
+                    <br>
+                    <br>
+
+                    트러블 슈팅: 백엔드와의 통신(api)
+                </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img" id="lim"></div>
+            <div class="card_article">
+                <p class="card_title" >림딩동</p>
+                <p>한림대학교 중앙동아리를 추천하는 웹입니다.</p>
+                제작기간: 23년 10월 ~23년 11월
+                <br>
+                <br>
+
+                사용한 툴: html, css, js, react, axios, webgl
+                <br>
+                <br>
+
+                트러블 슈팅: react와 unity간의 연동 중 생명주기에 충돌이 발생
+            </div>
+        </div>
+        <div class="card">
+            <div class="card_img" id="nego"></div>
+            <div class="card_article">
+                <p class="card_title">네고랜드</p>
+                <p>번개장터를 클론해 여러 기능을 직접 구현한 웹입니다.</p>
+                제작기간: 23년 12월 ~24년 1월
+                <br>
+                <br>
+
+                사용한 툴: html,css,js,vue.js, scss, jwt
+                <br>
+                <br>
+
+                트러블 슈팅: 로그인 프로세스를 구현하기 위한 jwt발급 및 보안
+            </div>
+        </div>
+        <!-- <div class="card">
+            <div class="card_img"></div>
+            <div class="card_article"></div>
+        </div> -->
     </section>
 </body>
 </html>
